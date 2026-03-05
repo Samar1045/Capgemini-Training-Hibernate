@@ -7,6 +7,11 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Task {
+    //Types of strategy for GenerationType
+    //Auto
+    //Identity(MySQL)
+    //Sequence(Postgres,Oracle)
+    //Table(Composite key)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id; // Only non-primitive datatypes allowed
